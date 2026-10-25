@@ -1,0 +1,90 @@
+/* Realizado por Fhany Mendez y Karen Maya - 305 - Frameworks */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: #0b4d3a;
+    color: white;
+    padding: 20px;
+}
+.sidebar h2 {
+    color: #a8e6cf;
+    font-size: 20px;
+}
+.sidebar nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.sidebar nav a:hover {
+    color: #a8e6cf;
+}
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+.top-bar {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #0b4d3a;
+    color: white;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button, .btn-guardar {
+    margin-top: 15px;
+    background-color: #0b4d3a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #136f56;
+}
+.btn-eliminar {
+    background-color: #d9534f;
+    padding: 5px 10px;
+}
+.btn-eliminar:hover {
+    background-color: #c9302c;
+}

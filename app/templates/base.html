@@ -1,0 +1,26 @@
+<!-- Realizado por Fhany Mendez y Karen Maya - 305 - Frameworks -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión Eco-Reto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Barra lateral de navegación -->
+        <aside class="sidebar">
+            <h2>Misión 🌿<br>Eco-Reto</h2>
+            <nav>
+                <a href="{{ url_for('index') }}">🏠 Inicio</a>
+                <a href="{{ url_for('nueva_accion') }}">+ Nueva acción</a>
+            </nav>
+        </aside>
+        <!-- Contenido dinámico principal -->
+        <main class="main-content">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+</body>
+</html>

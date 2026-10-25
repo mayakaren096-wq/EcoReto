@@ -1,0 +1,5 @@
+# Realizado por Fhany Mendez y Karen Maya - 305 - Frameworks
+# Dependencias necesarias para ejecutar el proyecto en Render
+Flask
+gunicorn
+psycopg[binary]

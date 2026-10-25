@@ -1,0 +1,31 @@
+<!-- Realizado por Fhany Mendez y Karen Maya - 305 - Frameworks -->
+{% extends "base.html" %}
+{% block content %}
+<header class="top-bar">
+    <h1>Nueva acción ecológica</h1>
+    <p>Registra una nueva acción que ayude al planeta.</p>
+</header>
+
+<section class="form-section">
+    <form method="POST">
+        <label for="titulo">Título de la acción:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria" required>
+            <option value="Agua">Agua</option>
+            <option value="Reciclaje">Reciclaje</option>
+            <option value="Energía">Energía</option>
+            <option value="Transporte">Transporte</option>
+        </select>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea>
+
+        <label for="propuesto_por">Propuesto por (Equipo):</label>
+        <input type="text" id="propuesto_por" name="propuesto_por" required>
+
+        <button type="submit" class="btn-guardar">Guardar acción</button>
+    </form>
+</section>
+{% endblock %}

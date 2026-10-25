@@ -1,0 +1,7 @@
+# Realizado por Fhany Mendez y Karen Maya - 305 - Frameworks
+# Archivos y carpetas ignorados por Git para proteger datos sensibles y entornos locales
+__pycache__/
+.venv/
+venv/
+.env
+eco_reto.db
