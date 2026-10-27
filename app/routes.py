@@ -18,7 +18,7 @@ def index():
 
     conn = get_db_connection()
     cur = conn.cursor()
-    cur.execute("SELECT id, title, categoria, description, propuesto_por FROM acciones;")
+    cur.execute("SELECT id, titulo, categoria, description, propuesto_por FROM acciones;")
     acciones = cur.fetchall()
     cur.close()
     conn.close()
