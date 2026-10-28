@@ -22,7 +22,7 @@
         <tbody>
             {% for accion in acciones %}
             <tr>
-                <td>{{ accion[0] }}</td>
+                <td>{{ loop.index }}</td>
                 <td>{{ accion[1] }}</td>
                 <td>{{ accion[2] }}</td>
                 <td>{{ accion[3] }}</td>
