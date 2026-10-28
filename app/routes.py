@@ -34,16 +34,16 @@ def nueva_accion():
         return redirect(url_for('login'))
 
     if request.method == 'POST':
-        title = request.form['title']
+        title = request.form['titulo']
         categoria = request.form['categoria']
-        description = request.form['description']
+        description = request.form['descripcion']
         # Usamos el nombre del usuario logueado automáticamente o el campo del formulario
         propuesto_por = session.get('user_name', 'Anónimo')
 
         conn = get_db_connection()
         cur = conn.cursor()
         cur.execute(
-            "INSERT INTO acciones (title, categoria, description, propuesto_por) VALUES (%s, %s, %s, %s);",
+            "INSERT INTO acciones (titulo, categoria, descripcion, propuesto_por) VALUES (%s, %s, %s, %s);",
             (title, categoria, description, propuesto_por)
         )
         conn.commit()
