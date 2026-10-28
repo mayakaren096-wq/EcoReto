@@ -56,15 +56,16 @@ def nueva_accion():
     return render_template('formulario.html')
 
 # 3. RUTA PARA ELIMINAR UNA ACCIÓN
+# 3. RUTA PARA ELIMINAR UNA ACCIÓN
 @current_app.route('/eliminar/<int:id>', methods=['POST'])
 def eliminar_accion(id):
     if 'user_id' not in session:
         flash('Debes iniciar sesión para realizar esta acción.', 'warning')
         return redirect(url_for('login'))
-
+    
     conn = get_db_connection()
     cur = conn.cursor()
-    cur.execute("DELETE FROM acciones WHERE id = %s;", (id,))
+    cur.execute("DELETE FROM acciones WHERE id = %s", (id,))
     conn.commit()
     cur.close()
     conn.close()

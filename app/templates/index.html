@@ -28,9 +28,9 @@
                 <td>{{ accion[3] }}</td>
                 <td>{{ accion[4] }}</td>
                 <td>
-                    <form action="{{ url_for('eliminar_accion', id=accion[0]) }}" method="POST"></form>
-                        <button type="submit" class="btn-eliminar">Eliminar</button>
-                    </form>
+                    <form action="{{ url_for('eliminar_accion', id=accion[0]) }}" method="POST" style="display:inline;">
+    <button type="submit" class="btn-eliminar">Eliminar</button>
+</form>
                 </td>
             </tr>
             {% else %}
