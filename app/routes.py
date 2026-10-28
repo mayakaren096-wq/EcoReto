@@ -53,7 +53,7 @@ def nueva_accion():
         flash('¡Acción registrada exitosamente!', 'success')
         return redirect(url_for('index'))
 
-    return render_template('form.html')
+    return render_template('formulario.html')
 
 # 3. RUTA PARA ELIMINAR UNA ACCIÓN
 @current_app.route('/eliminar/<int:id>', methods=['POST'])
