@@ -22,11 +22,11 @@
         <tbody>
             {% for accion in acciones %}
             <tr>
-                <td>{{ accion.id }}</td>
-                <td>{{ accion.titulo }}</td>
-                <td>{{ accion.categoria }}</td>
-                <td>{{ accion.descripcion }}</td>
-                <td>{{ accion.propuesto_por }}</td>
+                <td>{{ accion[0] }}</td>
+                <td>{{ accion[1] }}</td>
+                <td>{{ accion[2] }}</td>
+                <td>{{ accion[3] }}</td>
+                <td>{{ accion[4] }}</td>
                 <td>
                     <form action="{{ url_for('eliminar_accion', id=accion[0]) }}" method="POST"></form>
                         <button type="submit" class="btn-eliminar">Eliminar</button>
