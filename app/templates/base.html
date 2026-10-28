@@ -15,6 +15,13 @@
             <nav>
                 <a href="{{ url_for('index') }}">🏠 Inicio</a>
                 <a href="{{ url_for('nueva_accion') }}">+ Nueva acción</a>
+                
+                {% if 'user_id' in session %}
+                    <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}">Iniciar sesión</a>
+                    <a href="{{ url_for('register') }}">Registrarse</a>
+                {% endif %}
             </nav>
         </aside>
         <!-- Contenido dinámico principal -->
