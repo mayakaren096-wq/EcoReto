@@ -28,7 +28,7 @@
                 <td>{{ accion.descripcion }}</td>
                 <td>{{ accion.propuesto_por }}</td>
                 <td>
-                    <form action="{{ url_for('eliminar_accion', id=accion.id) }}" method="POST" style="display:inline;">
+                    <form action="{{ url_for('eliminar_accion', id=accion[0]) }}" method="POST"></form>
                         <button type="submit" class="btn-eliminar">Eliminar</button>
                     </form>
                 </td>
